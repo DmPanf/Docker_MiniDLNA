@@ -1,8 +1,8 @@
-# MiniDLNA Server Setup in Docker 🐳🎞️
+## MiniDLNA Server Setup in Docker 🐳🎞️
 
 Welcome to our guide on setting up a MiniDLNA (Digital Living Network Alliance) server in Docker. This will allow you to stream your media files to any DLNA-compatible devices on your network. 🎶📺
 
-## Prerequisites 📋
+### Prerequisites 📋
 
 Before you start, ensure you have:
 
@@ -10,9 +10,9 @@ Before you start, ensure you have:
 - Basic knowledge of Docker, Docker Compose, and networking.
 - Media files you want to share using DLNA.
 
-## Installation 🛠️
+### Installation 🛠️
 
-### Step 1: Clone the Repository
+#### Step 1: Clone the Repository
 
 Clone this repository to get the Dockerfile and docker-compose.yml:
 
@@ -21,7 +21,7 @@ git clone https://github.com/DmPanf/Manjaro_MiniDLNA_Docker_Bot.git
 cd Manjaro_MiniDLNA_Docker_Bot
 ```
 
-### Step 2: Build the Docker Image
+#### Step 2: Build the Docker Image
 
 First, modify the provided Dockerfile to set up MiniDLNA instead of the Python bot. Your Dockerfile should look something like this:
 
@@ -42,11 +42,11 @@ EXPOSE 8200 1900/udp
 CMD ["minidlnad", "-d"]
 ```
 
-### Step 3: Configure MiniDLNA
+#### Step 3: Configure MiniDLNA
 
 Create a `minidlna.conf` file with your MiniDLNA configuration. Make sure to specify the media directories and port numbers.
 
-### Step 4: Set Up Docker Compose
+#### Step 4: Set Up Docker Compose
 
 Modify `docker-compose.yml` to set up the MiniDLNA service:
 
@@ -67,7 +67,7 @@ services:
 
 Replace `/path/to/your/media` with the path to your media files on the host machine.
 
-### Step 5: Start the MiniDLNA Server
+#### Step 5: Start the MiniDLNA Server
 
 Run the following command to start the MiniDLNA server:
 
@@ -75,11 +75,11 @@ Run the following command to start the MiniDLNA server:
 docker-compose up -d
 ```
 
-## Accessing Your Media 📺🎵
+### Accessing Your Media 📺🎵
 
 Once the MiniDLNA server is running, you can access your media files from any DLNA-compatible device on the same network. Just look for the server named 'MiniDLNA' on your device.
 
-## Maintenance Commands 🧰
+### Maintenance Commands 🧰
 
 - To check the status of your MiniDLNA container:
   ```bash
@@ -101,18 +101,18 @@ Once the MiniDLNA server is running, you can access your media files from any DL
   docker-compose down
   ```
 
-## Troubleshooting 🛠
+### Troubleshooting 🛠
 
 - **No Media Files Found**: Ensure your media files are correctly placed in the specified directory and the directory is correctly mounted in Docker.
 - **Networking Issues**: Verify if the ports are correctly exposed and not blocked by any firewall.
 
-## Contribution and Support 🤝
+### Contribution and Support 🤝
 
 Feel free to contribute to this project by submitting pull requests or opening issues for any improvements or suggestions.
 
 For support, please open an issue in this repository.
 
-## License 📜
+### License 📜
 
 This project is licensed under [LICENSE-NAME]. See the [LICENSE](LICENSE) file for details.
 
