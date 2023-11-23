@@ -1,0 +1,11 @@
+# Docker
+alias d.a='docker ps -a'
+alias d.s='docker stop'
+alias d.i='docker images'
+alias d.r='docker rm'
+alias d.m='docker rmi'
+alias d.u='docker-compose up'
+alias d.b='docker-compose up --build'
+alias d.v='docker version && echo '✅'; docker compose version'
+alias d.d='/bin/bash ~/scr/delete_image.sh'
+alias d.h='help_for_docker'
