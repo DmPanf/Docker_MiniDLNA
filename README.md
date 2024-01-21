@@ -74,6 +74,7 @@ Run the following command to start the MiniDLNA server:
 ```bash
 docker-compose up -d
 ```
+---
 
 ### Accessing Your Media 📺🎵
 
@@ -116,3 +117,6 @@ For support, please open an issue in this repository.
 
 This project is licensed under [LICENSE-NAME]. See the [LICENSE](LICENSE) file for details.
 
+---
+
+## 
